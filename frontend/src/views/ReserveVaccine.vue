@@ -45,7 +45,7 @@
         </div>
         <div class="row mt-2">
             <div class="col-6 text-start">
-                <label for="exampleFormControlInput1" class="form-label">คำนำหน้า*</label>
+                <label for="exampleFormControlInput1" class="form-label">เพศ*</label>
             </div>
             <div class="col-6">
                 <div class="dropdown w-100">
@@ -170,6 +170,7 @@ import {} from 'bootstrap'
 export default {
   data() {
     return {
+        
     };
   },
   methods: {
