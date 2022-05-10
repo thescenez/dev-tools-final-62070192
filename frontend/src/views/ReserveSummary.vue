@@ -25,8 +25,8 @@
             
         </div>
         <div class="row" style="margin-left: 20rem; padding-top: 5rem; padding-bottom: 5rem;">
-            <button to="/reserve-vaccine" type="button" class="btn btn-secondary my-5" style="width: 300px; font-size: 1.5rem">Cancel</button>
-            <button to="/reserve-vaccine" type="button" class="btn btn-danger my-5 ms-3" style="width: 300px; font-size: 1.5rem">Confirm</button>
+            <router-link to="/reserve-vaccine" type="button" class="btn btn-secondary my-5" style="width: 300px; font-size: 1.5rem">Cancel</router-link>
+            <router-link to="/" type="button" class="btn btn-danger my-5 ms-3" style="width: 300px; font-size: 1.5rem">Confirm</router-link>
         </div>
   </div>
 </template>
