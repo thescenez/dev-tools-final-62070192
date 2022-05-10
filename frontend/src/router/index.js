@@ -9,6 +9,11 @@ const routes = [
     name: 'Home',
     component: () => import('../views/HomePage.vue') // set home as path '/'
   },
+  {
+    path: '/reserve-vaccine',
+    name: 'ReserveVaccine',
+    component: () => import('../views/ReserveVaccine.vue') // set home as path '/'
+  }
   
 ]
 

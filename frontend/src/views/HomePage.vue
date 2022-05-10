@@ -1,9 +1,12 @@
 <template>
-    <div>
-        <h1>home</h1>
-        <h1>{{rooms.length}}</h1>
-        <h1>{{user}}</h1>
+  <div class="" style="background-color:">
+    <div class="container-fluid p-0" style="height: 60vh">
+        <img class="w-100" src="../assets/banner.jpg" style="object-fit: contain"
+        />
     </div>
+    <h1 style="font-size: 4rem">เชื่อมต่อ ช่วยเหลือ เพื่อคนไทยสู้ภัยโควิด<br>Connecting All Thais in the Fight Agianst COVID</h1>
+    <router-link to="/reserve-vaccine" type="button" class="btn btn-danger mt-5" style="width: 450px; font-size: 2rem">ลงทะเบียนจองคิว - Register</router-link>
+  </div>
 </template>
 
 <script>
