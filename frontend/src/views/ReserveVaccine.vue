@@ -15,14 +15,14 @@
             <div class="col-6">
                 <div class="dropdown w-100">
                     <button class="btn dropdown-toggle w-100 text-end" type="button" id="title" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #C4C4C4">
-                        กรุณาเลือก
+                        {{show_title}}
                     </button>
                     <ul class="dropdown-menu w-100" aria-labelledby="title">
-                        <li><a class="dropdown-item" href="#">นาย</a></li>
-                        <li><a class="dropdown-item" href="#">นาง</a></li>
-                        <li><a class="dropdown-item" href="#">นางสาว</a></li>
-                        <li><a class="dropdown-item" href="#">ด.ช.</a></li>
-                        <li><a class="dropdown-item" href="#">ด.ญ.</a></li>
+                        <li><a class="dropdown-item" @click="show_title = 'นาย'">นาย</a></li>
+                        <li><a class="dropdown-item" @click="show_title = 'นาง'">นาง</a></li>
+                        <li><a class="dropdown-item" @click="show_title = 'นางสาว'">นางสาว</a></li>
+                        <li><a class="dropdown-item" @click="show_title = 'ด.ช.'">ด.ช.</a></li>
+                        <li><a class="dropdown-item" @click="show_title = 'ด.ญ'">ด.ญ.</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,11 +50,11 @@
             <div class="col-6">
                 <div class="dropdown w-100">
                     <button class="btn dropdown-toggle w-100 text-end" type="button" id="gender" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #C4C4C4">
-                        กรุณาเลือก
+                        {{show_gender}}
                     </button>
                     <ul class="dropdown-menu w-100" aria-labelledby="gender">
-                        <li><a class="dropdown-item" href="#">ชาย</a></li>
-                        <li><a class="dropdown-item" href="#">หญิง</a></li>
+                        <li><a class="dropdown-item" @click="show_gender = 'ชาย'">ชาย</a></li>
+                        <li><a class="dropdown-item" @click="show_gender = 'หญิง'">หญิง</a></li>
                     </ul>
                 </div>
             </div>
@@ -143,18 +143,18 @@
             </div>
             <div class="col-6">
                 <div class="dropdown w-100">
-                    <button class="btn dropdown-toggle w-100 text-end" type="button" id="gender" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #C4C4C4">
-                        -- กรุณาเลือกเวลา --
+                    <button class="btn dropdown-toggle w-100 text-end" type="button" id="time" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: #C4C4C4">
+                        {{show_time}}
                     </button>
-                    <ul class="dropdown-menu w-100" aria-labelledby="gender">
-                        <li><a class="dropdown-item" href="#">09.00-10.00</a></li>
-                        <li><a class="dropdown-item" href="#">10.00-11.00</a></li>
-                        <li><a class="dropdown-item" href="#">11.00-12.00</a></li>
-                        <li><a class="dropdown-item" href="#">12.00-13.00</a></li>
-                        <li><a class="dropdown-item" href="#">13.00-14.00</a></li>
-                        <li><a class="dropdown-item" href="#">14.00-15.00</a></li>
-                        <li><a class="dropdown-item" href="#">15.00-16.00</a></li>
-                        <li><a class="dropdown-item" href="#">16.00-17.00</a></li>
+                    <ul class="dropdown-menu w-100" aria-labelledby="time">
+                        <li><a class="dropdown-item" @click="show_time = '09.00-10.00'">09.00-10.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '10.00-11.00'">10.00-11.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '11.00-12.00'">11.00-12.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '12.00-13.00'">12.00-13.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '13.00-14.00'">13.00-14.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '14.00-15.00'">14.00-15.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '15.00-16.00'">15.00-16.00</a></li>
+                        <li><a class="dropdown-item" @click="show_time = '16.00-17.00'">16.00-17.00</a></li>
                     </ul>
                 </div>
             </div>
@@ -170,7 +170,9 @@ import {} from 'bootstrap'
 export default {
   data() {
     return {
-        
+        show_title: 'กรุณาเลือก',
+        show_gender: 'กรุณาเลือก',
+        show_time: '-- กรุณาเลือกเวลา --',
     };
   },
   methods: {
