@@ -160,14 +160,13 @@
             </div>
         </div>
 
-        <router-link to="/reserve-vaccine" type="button" class="btn btn-danger my-5" style="width: 300px; font-size: 1.5rem">Next</router-link>
+        <router-link to="/reserve-summary" type="button" class="btn btn-danger my-5" style="width: 300px; font-size: 1.5rem">Next</router-link>
     </form>
   </div>
 </template>
 
 <script>
 import {} from 'bootstrap'
-import axios from "../plugins/axios";
 export default {
   data() {
     return {
@@ -176,15 +175,7 @@ export default {
   methods: {
   },
   created() {
-    axios
-      .get("/rooms")
-      .then((response) => {
-        console.log(response.data);
-        this.rooms = response.data;
-      })
-      .catch((err) => {
-        console.log(err.response.data);
-      });
+
   }
 };
 </script>

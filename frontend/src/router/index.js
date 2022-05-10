@@ -13,6 +13,11 @@ const routes = [
     path: '/reserve-vaccine',
     name: 'ReserveVaccine',
     component: () => import('../views/ReserveVaccine.vue') // set home as path '/'
+  },
+  {
+    path: '/reserve-summary',
+    name: 'ReserveSummary',
+    component: () => import('../views/ReserveSummary.vue') // set home as path '/'
   }
   
 ]
